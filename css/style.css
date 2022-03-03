@@ -72,3 +72,22 @@ header .highlight{
 				width: 30%;
 				padding: 10px;
 }
+
+@media(max-width: 768px){
+        header #branding,
+        header nav,
+        header nav li,
+        #boxes .box,
+        article#main-col,
+        aside#sidebar {
+                float: none;
+                text-align: center;
+                width: 100%;
+        }
+        header{
+                padding-bottom:20px;
+        }
+        #showcase h1{
+                margin-top:40px;
+        }
+}
