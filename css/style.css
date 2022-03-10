@@ -15,12 +15,6 @@ body {
     overflow: hidden;
 }
 
-a:focus {
-    border: 2px solid #6c00ff;
-    transform: translateX(15px);
-    width: 385px;
-}
-
 /*################### header #####################*/
 
 header {
@@ -96,13 +90,16 @@ header .highlight {
 /*################### showcase #####################*/
 
 @media (max-width: 768px) {
+    body,
+    .container,
+    header,
     header #branding,
-    header nav,
-    header nav li,
+    #boxes,
     #boxes .box,
     header {
         padding-bottom: 20px;
-    }
+    },
+    #showcase,
     #showcase h1 {
         margin-top: 40px;
     }
