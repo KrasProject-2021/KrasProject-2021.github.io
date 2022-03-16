@@ -1,106 +1,112 @@
 body {
-    background: #000 url('../img/a144.jpg') no-repeat fixed;
-    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    background: #000 url("../img/a446.jpg") no-repeat fixed;
+    width: 100%;
+    min-height: 100%;
     margin: 0;
-    padding: 0;
-    background-position: center;
     background-size: cover;
+    display: flex;
     text-align: center;
-    transform: translate3d(0, 0 , 0);
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-/*################### header #####################*/
-
-header {
-    padding-top: 30px;
-    min-height: 70px;
-    align-content: center;
-}
-
-header #branding img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    font-weight: bold;
-}
-
-header h1 {
     color: #fff;
 }
 
 header .highlight {
-    color: #e8491d;
-    font-weight: bold;
+	color: #e8491d;
+	font-weight: bold;
 }
 
-/*################### header #####################*/
+.typed {
+    opacity: 0.8;
+}
 
-/*################### boxes #####################*/
+.typed::after {
+    content: '|';
+    display: inline;
+    animation: blink 0.7s infinite;
+}
 
-#boxes {
-    margin-top: 10px;
+.typed-cursor {
+    opacity: 0;
+    display: none;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info {
+    min-width: 300px;
+    width: 300px;
+    display: flex;
+    background: none;
+    padding: 35px;
+    border-radius: 20px;
+    border: blueviolet solid 1px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+
+.avatar-container {
+    margin: 0 0.4em 0 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.avatar {
+    width: 10em;
+    height: 10em;
+    border-radius: 5.6em;
+    border: #fff solid 2px;
+}
+
+.mmm {
+    position: relative;
+    display: inline-flex;
+    padding: 0.3em;
+}
+
+a.btn:hover,
+button:hover {
+    background: #fff6;
     color: #fff;
-    text-align: center;
 }
 
-#boxes .box img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    font-weight: bold;
+button:active, button:focus {
+    outline: none;
 }
 
-#boxes .box a {
-    color: #ccc;
+hr {
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: inherit;
+    transition: .2ms;
+}
+
+/*########## btn ##########*/
+
+.btn {
+    display: inline-block;
+    background: #8c959d;
+    color: #fff;
+    padding: 20px;
     text-decoration: none;
-    font-size: 16px;
-}
-
-#boxes .box {
-    float: left;
+    border-radius: 20px;
+    margin: 4px;
+    padding: 12px 20px; 
     text-align: center;
-    width: 30%;
-    padding: 10px;
+    cursor: pointer;
+    width: 200px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    padding-left: 10px;
 }
 
-/*################### boxes #####################*/
-
-/*################### showcase #####################*/
-
-#showcase {
-    min-height: 50px;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-}
-
-#showcase h1 {
-    font-size: 50px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/*################### showcase #####################*/
-
-@media (max-width: 768px) {
-    body;
-    .container;
-    header;
-    header #branding;
-    #boxes;
-    #boxes .box;
-    header {
-        padding-bottom: 20px;
-    }
-    #showcase;
-    #showcase h1 {
-        margin-top: 40px;
-    }
+.btn:focus {
+    border: 2px solid #6c00ff;
+    transform: translateX(10px);
 }
