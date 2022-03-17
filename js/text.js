@@ -1,4 +1,4 @@
-(function () {
+$(function () {
     var title = document.title,
         animSeq = ["|"],
         animIndex = 0,
