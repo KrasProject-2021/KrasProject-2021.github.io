@@ -1,5 +1,5 @@
 body {
-    background: #000 url("../img/a446.jpg") no-repeat fixed;
+    background: url("../img/a446.jpg") no-repeat fixed;
     width: 100%;
     min-height: 100%;
     margin: 0;
@@ -19,9 +19,27 @@ header .highlight {
 }
 
 .typed::after {
-    content: '|';
-    display: inline;
-    animation: blink 0.7s infinite;
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
 
 .typed-cursor {
@@ -44,48 +62,6 @@ header .highlight {
     border-radius: 20px;
     border: blueviolet solid 1px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
-}
-
-.avatar-container {
-    margin: 0 0.4em 0 0;
-    display: inline-flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.avatar {
-    width: 10em;
-    height: 10em;
-    border-radius: 5.6em;
-    border: #fff solid 2px;
-}
-
-.pizdec {
-    position: relative;
-    display: inline-flex;
-    padding: 0.3em;
-}
-
-a.btn:hover,
-button:hover {
-    background: #fff6;
-    color: #fff;
-}
-
-button:active, button:focus {
-    outline: none;
-}
-
-hr {
-    border: none;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-h3 {
-    font-style: normal;
-    font-weight: inherit;
-    transition: .2ms;
 }
 
 /*########## btn ##########*/
@@ -111,13 +87,45 @@ h3 {
     transform: translateX(10px);
 }
 
-@media (max-width: 769px) {
-    body;
-    header:
-    .btn:
-    .center:
-    .mmm;
-    hr;
-    h3;
-    h1;
+/*#########################*/
+
+.avatar-container {
+    margin: 0 0.4em 0 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.avatar {
+    width: 10em;
+    height: 10em;
+    border-radius: 5.6em;
+    border: #fff solid 2px;
+}
+
+.pizdec {
+    position: relative;
+    display: inline-flex;
+    padding: 0.3em;
+}
+
+hr {
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: inherit;
+    transition: .2ms;
+    -webkit-transition: .2ms;
+    -moz-transition: .2ms;
+}
+
+.btn {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s;
 }
