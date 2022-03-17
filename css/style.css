@@ -111,13 +111,13 @@ h3 {
     transform: translateX(10px);
 }
 
-@media (max-width: 768px) {
-    body,
-    header,
-    .btn,
-    .center,
-    .mmm
-    hr,
-    h3,
-    h1,
+@media (max-width: 769px) {
+    body;
+    header:
+    .btn:
+    .center:
+    .mmm;
+    hr;
+    h3;
+    h1;
 }
